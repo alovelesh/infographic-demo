@@ -1,0 +1,82 @@
+.container {
+    max-width: 700px;
+    border: 2px solid;
+    header {
+        .card {
+            background-color: #f8d613;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+    .content {
+        .card {
+            border: 0;
+        }
+        .card-title {
+            display: flex;
+            text-transform: uppercase;
+        }
+        .card-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .icon {
+            width: 30px;
+            border: 3px solid;
+            border-radius: 50%;
+            padding: 3px;
+            margin-right: 10px;
+        }
+        .skills {
+            content: url('../assets/icons/skill.svg');
+        }
+    }
+    footer {
+        border: 5px solid #f8d613;
+    }
+}
+
+.experience {
+    *, *:after, *:before {
+        margin:0;
+        padding:0;
+    }
+    .node {
+        vertical-align: top;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display:inline-block;
+        transition: all 1000ms ease;
+    }
+
+    .divider {
+        // padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-left: 2px solid #c9c9c9;
+        margin-left: 4px;
+        transition: all 800ms ease;
+    }
+    
+    li p {
+        display:inline-block;
+        width: calc(100% - 10px);
+        border-left: 2px solid #c9c9c9;
+        left: -6px;
+        position: relative;
+        padding-left: 20px;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .grey { background-color: rgba(201, 201, 201, 1); }
+}
+
+.exp-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
